@@ -25,7 +25,6 @@ final class TabBarViewController: BaseViewController {
     
     private func bindProperties() {
         viewModel.tabBarController.bind { [weak self] tabBarController in
-            
             self?.mainTabBarController = tabBarController
         }
     }

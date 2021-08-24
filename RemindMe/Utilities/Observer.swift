@@ -1,5 +1,5 @@
 //
-//  Box.swift
+//  Observer.swift
 //  RemindMe
 //
 //  Created by Oleksandr Oleksyn on 19.07.2021.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class Box<T> {
+final class Observer<T> {
     typealias Listener = (T) -> Void
     var listener: Listener?
     

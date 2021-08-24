@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		146F18C626D525EB0028E6DD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F18C526D525EB0028E6DD /* SettingsViewController.swift */; };
+		146F18C826D5262C0028E6DD /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 146F18C726D5262C0028E6DD /* SettingsViewController.xib */; };
+		146F18CA26D526800028E6DD /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F18C926D526800028E6DD /* SettingsViewModel.swift */; };
+		146F18CC26D52F270028E6DD /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F18CB26D52F270028E6DD /* Reminder.swift */; };
 		14BE7E4C26A5B1D800E86F5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E4B26A5B1D800E86F5D /* AppDelegate.swift */; };
 		14BE7E5026A5B1D800E86F5D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E4F26A5B1D800E86F5D /* TabBarViewController.swift */; };
 		14BE7E5326A5B1D800E86F5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14BE7E5126A5B1D800E86F5D /* Main.storyboard */; };
@@ -15,8 +19,8 @@
 		14BE7E6326A5B1D900E86F5D /* RemindMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E6226A5B1D900E86F5D /* RemindMeTests.swift */; };
 		14BE7E6E26A5B1D900E86F5D /* RemindMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E6D26A5B1D900E86F5D /* RemindMeUITests.swift */; };
 		14BE7E8226A5B41C00E86F5D /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E8126A5B41C00E86F5D /* NotificationService.swift */; };
-		14BE7E8A26A5B99E00E86F5D /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E8926A5B99E00E86F5D /* Box.swift */; };
-		14BE7E8B26A5B99E00E86F5D /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E8926A5B99E00E86F5D /* Box.swift */; };
+		14BE7E8A26A5B99E00E86F5D /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E8926A5B99E00E86F5D /* Observer.swift */; };
+		14BE7E8B26A5B99E00E86F5D /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E8926A5B99E00E86F5D /* Observer.swift */; };
 		14BE7E9326A5BC1100E86F5D /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E9226A5BC1100E86F5D /* TabBarViewModel.swift */; };
 		14BE7E9426A5BC1100E86F5D /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E9226A5BC1100E86F5D /* TabBarViewModel.swift */; };
 		14BE7E9726A5C12100E86F5D /* TabBarDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E9626A5C12100E86F5D /* TabBarDataSource.swift */; };
@@ -35,10 +39,6 @@
 		14BE7EAF26A5C9B800E86F5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BE7EAD26A5C9B800E86F5D /* Images.xcassets */; };
 		14BE7EB126A5C9CD00E86F5D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BE7EB026A5C9CD00E86F5D /* Colors.xcassets */; };
 		14BE7EB226A5C9CD00E86F5D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BE7EB026A5C9CD00E86F5D /* Colors.xcassets */; };
-		14BE7EBA26A5D85100E86F5D /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7EB926A5D85100E86F5D /* Observable.swift */; };
-		14BE7EBB26A5D85100E86F5D /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7EB926A5D85100E86F5D /* Observable.swift */; };
-		14BE7EBD26A5D91100E86F5D /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7EBC26A5D91100E86F5D /* Observer.swift */; };
-		14BE7EBE26A5D91100E86F5D /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7EBC26A5D91100E86F5D /* Observer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +59,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		146F18C526D525EB0028E6DD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		146F18C726D5262C0028E6DD /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		146F18C926D526800028E6DD /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		146F18CB26D52F270028E6DD /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		14BE7E4826A5B1D800E86F5D /* RemindMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemindMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BE7E4B26A5B1D800E86F5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14BE7E4F26A5B1D800E86F5D /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +79,7 @@
 		14BE7E7F26A5B41C00E86F5D /* RemindMeWatchExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RemindMeWatchExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BE7E8126A5B41C00E86F5D /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		14BE7E8326A5B41C00E86F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14BE7E8926A5B99E00E86F5D /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		14BE7E8926A5B99E00E86F5D /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		14BE7E9226A5BC1100E86F5D /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 		14BE7E9626A5C12100E86F5D /* TabBarDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarDataSource.swift; sourceTree = "<group>"; };
 		14BE7E9A26A5C24800E86F5D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -85,8 +89,6 @@
 		14BE7EA826A5C61A00E86F5D /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		14BE7EAD26A5C9B800E86F5D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		14BE7EB026A5C9CD00E86F5D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		14BE7EB926A5D85100E86F5D /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
-		14BE7EBC26A5D91100E86F5D /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		146F18C426D525D20028E6DD /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				146F18C526D525EB0028E6DD /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		14BE7E3F26A5B1D800E86F5D = {
 			isa = PBXGroup;
 			children = (
@@ -146,7 +156,6 @@
 		14BE7E4A26A5B1D800E86F5D /* RemindMe */ = {
 			isa = PBXGroup;
 			children = (
-				14BE7EB826A5D83100E86F5D /* Observable */,
 				14BE7E8C26A5B9D100E86F5D /* Controllers */,
 				14BE7E8E26A5B9DD00E86F5D /* ViewModels */,
 				14BE7E8D26A5B9D600E86F5D /* Models */,
@@ -202,7 +211,7 @@
 		14BE7E8826A5B98500E86F5D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				14BE7E8926A5B99E00E86F5D /* Box.swift */,
+				14BE7E8926A5B99E00E86F5D /* Observer.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -210,6 +219,7 @@
 		14BE7E8C26A5B9D100E86F5D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				146F18C426D525D20028E6DD /* Settings */,
 				14BE7EA426A5C5AA00E86F5D /* Base */,
 				14BE7E9926A5C23B00E86F5D /* Home */,
 				14BE7E9526A5C10D00E86F5D /* TabBar */,
@@ -220,6 +230,7 @@
 		14BE7E8D26A5B9D600E86F5D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				146F18CB26D52F270028E6DD /* Reminder.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -230,6 +241,7 @@
 				14BE7EA826A5C61A00E86F5D /* BaseViewModel.swift */,
 				14BE7E9226A5BC1100E86F5D /* TabBarViewModel.swift */,
 				14BE7E9D26A5C33B00E86F5D /* HomeViewModel.swift */,
+				146F18C926D526800028E6DD /* SettingsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -276,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				14BE7EA126A5C39F00E86F5D /* HomeViewController.xib */,
+				146F18C726D5262C0028E6DD /* SettingsViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -304,15 +317,6 @@
 				14BE7E5126A5B1D800E86F5D /* Main.storyboard */,
 			);
 			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		14BE7EB826A5D83100E86F5D /* Observable */ = {
-			isa = PBXGroup;
-			children = (
-				14BE7EB926A5D85100E86F5D /* Observable.swift */,
-				14BE7EBC26A5D91100E86F5D /* Observer.swift */,
-			);
-			name = Observable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,6 +448,7 @@
 				14BE7E5526A5B1D900E86F5D /* Assets.xcassets in Resources */,
 				14BE7EB126A5C9CD00E86F5D /* Colors.xcassets in Resources */,
 				14BE7E5326A5B1D800E86F5D /* Main.storyboard in Resources */,
+				146F18C826D5262C0028E6DD /* SettingsViewController.xib in Resources */,
 				14BE7EA226A5C39F00E86F5D /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,15 +484,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14BE7EBA26A5D85100E86F5D /* Observable.swift in Sources */,
-				14BE7EBD26A5D91100E86F5D /* Observer.swift in Sources */,
 				14BE7E9326A5BC1100E86F5D /* TabBarViewModel.swift in Sources */,
-				14BE7E8A26A5B99E00E86F5D /* Box.swift in Sources */,
+				14BE7E8A26A5B99E00E86F5D /* Observer.swift in Sources */,
 				14BE7E9E26A5C33B00E86F5D /* HomeViewModel.swift in Sources */,
+				146F18CC26D52F270028E6DD /* Reminder.swift in Sources */,
+				146F18C626D525EB0028E6DD /* SettingsViewController.swift in Sources */,
 				14BE7E5026A5B1D800E86F5D /* TabBarViewController.swift in Sources */,
 				14BE7E9726A5C12100E86F5D /* TabBarDataSource.swift in Sources */,
 				14BE7EA926A5C61A00E86F5D /* BaseViewModel.swift in Sources */,
 				14BE7EA626A5C5C000E86F5D /* BaseViewController.swift in Sources */,
+				146F18CA26D526800028E6DD /* SettingsViewModel.swift in Sources */,
 				14BE7E4C26A5B1D800E86F5D /* AppDelegate.swift in Sources */,
 				14BE7E9B26A5C24800E86F5D /* HomeViewController.swift in Sources */,
 			);
@@ -518,11 +524,9 @@
 				14BE7E9826A5C12100E86F5D /* TabBarDataSource.swift in Sources */,
 				14BE7E8226A5B41C00E86F5D /* NotificationService.swift in Sources */,
 				14BE7E9426A5BC1100E86F5D /* TabBarViewModel.swift in Sources */,
-				14BE7EBB26A5D85100E86F5D /* Observable.swift in Sources */,
 				14BE7EAA26A5C61A00E86F5D /* BaseViewModel.swift in Sources */,
-				14BE7EBE26A5D91100E86F5D /* Observer.swift in Sources */,
 				14BE7EA726A5C5C000E86F5D /* BaseViewController.swift in Sources */,
-				14BE7E8B26A5B99E00E86F5D /* Box.swift in Sources */,
+				14BE7E8B26A5B99E00E86F5D /* Observer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

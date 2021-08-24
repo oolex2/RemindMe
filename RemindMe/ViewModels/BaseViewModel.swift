@@ -8,8 +8,6 @@
 import UIKit
 
 class BaseViewModel: NSObject {
-    
-    func prepareNavigationBar() {
-        UINavigationBar.appearance().barTintColor = .white
-    }
+    var mainColor = UIColor.green
+    var secondaryColor = UIColor.white
 }

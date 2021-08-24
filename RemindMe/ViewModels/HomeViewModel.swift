@@ -5,23 +5,21 @@
 //  Created by Oleksandr Oleksyn on 19.07.2021.
 //
 
-import Foundation
+import UIKit
 
-final class HomeViewModel: BaseViewModel, Observable {
+final class HomeViewModel: BaseViewModel {
     
-    let name: Observer = Observer<String>()
+    private struct Constants {
+        static let title = "Keep in mind"
+    }
     
-    let password: Observer = Observer<String>()
+    var title: String {
+        Constants.title
+    }
     
-    let error: Observer = Observer<String>()
-    
-    func onChange() {
-        if name.value != nil {
-            if password.value != nil {
-                error.value = "No error"
-            }
-            error.value = "Name is empty"
-        }
-        error.value = "Password is empty"
+    func prepareRightBarButtonItem(withTarget target: Any?, andSelector selector: Selector?) -> UIBarButtonItem {
+        let barButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: target, action: selector)
+        barButtonItem.tintColor = mainColor
+        return barButtonItem
     }
 }

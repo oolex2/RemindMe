@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,9 +11,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="RemindMe" customModuleProvider="target">
             <connections>
-                <outlet property="Error" destination="6S1-I1-9lT" id="8JF-8z-jNx"/>
-                <outlet property="name" destination="w1k-XI-miB" id="1Nw-9K-Mg5"/>
-                <outlet property="password" destination="ZPa-nC-Zqx" id="glG-pz-Ual"/>
                 <outlet property="view" destination="mqo-Oj-ajS" id="jYo-AD-Ue5"/>
             </connections>
         </placeholder>
@@ -21,42 +19,39 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w1k-XI-miB">
-                    <rect key="frame" x="159" y="613" width="97" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZPa-nC-Zqx">
-                    <rect key="frame" x="159" y="679" width="97" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYb-ay-4hc">
-                    <rect key="frame" x="188" y="774" width="38" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Login"/>
-                    <connections>
-                        <action selector="loginpressed:" destination="-1" eventType="touchUpInside" id="U9L-p2-Qxh"/>
-                    </connections>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6S1-I1-9lT">
-                    <rect key="frame" x="168" y="550" width="78" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="prb-Pn-8TH">
+                    <rect key="frame" x="16" y="60" width="382" height="32"/>
+                    <segments>
+                        <segment title="Actual"/>
+                        <segment title="History"/>
+                    </segments>
+                    <color key="selectedSegmentTintColor" systemColor="systemGreenColor"/>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yog-T4-vbO">
+                    <rect key="frame" x="16" y="107" width="382" height="739"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Ze4-wD-DHa"/>
-            <color key="backgroundColor" systemColor="systemPinkColor"/>
+            <color key="backgroundColor" name="secondaryColor"/>
+            <constraints>
+                <constraint firstItem="Yog-T4-vbO" firstAttribute="top" secondItem="prb-Pn-8TH" secondAttribute="bottom" constant="16" id="Bty-82-8Jz"/>
+                <constraint firstItem="Ze4-wD-DHa" firstAttribute="trailing" secondItem="prb-Pn-8TH" secondAttribute="trailing" constant="16" id="C0n-M8-eC1"/>
+                <constraint firstItem="Yog-T4-vbO" firstAttribute="leading" secondItem="Ze4-wD-DHa" secondAttribute="leading" constant="16" id="Ga4-Sw-hVw"/>
+                <constraint firstItem="prb-Pn-8TH" firstAttribute="leading" secondItem="Ze4-wD-DHa" secondAttribute="leading" constant="16" id="H9I-mt-nEK"/>
+                <constraint firstItem="Ze4-wD-DHa" firstAttribute="bottom" secondItem="Yog-T4-vbO" secondAttribute="bottom" constant="16" id="Uoh-ep-7sS"/>
+                <constraint firstItem="prb-Pn-8TH" firstAttribute="top" secondItem="Ze4-wD-DHa" secondAttribute="top" constant="16" id="Xkb-CQ-I0r"/>
+                <constraint firstItem="Ze4-wD-DHa" firstAttribute="trailing" secondItem="Yog-T4-vbO" secondAttribute="trailing" constant="16" id="dLV-Lm-dZR"/>
+            </constraints>
             <point key="canvasLocation" x="157.97101449275362" y="55.580357142857139"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="secondaryColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

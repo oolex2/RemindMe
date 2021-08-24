@@ -7,10 +7,8 @@
 
 import UIKit
 
-final class HomeViewController: BaseViewController, Observable {
-    @IBOutlet weak var name: UITextField!
-    @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var Error: UILabel!
+final class HomeViewController: BaseViewController {
+
     let viewModel = HomeViewModel()
     
     //MARK: - Initialization
@@ -23,24 +21,26 @@ final class HomeViewController: BaseViewController, Observable {
         fatalError("init(coder:) has not been implemented")
     }
     
-    @IBAction func loginpressed(_ sender: Any) {
-        viewModel.name.value = name.text!
-        viewModel.password.value = password.text!
-        
-        viewModel.onChange()
-    }
-    
     //MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewModel.error.observer = self
+        prepareNavigationItem()
+    }
+    
+    private func prepareNavigationItem() {
+        self.navigationItem.title = viewModel.title
+        self.navigationItem.rightBarButtonItem = viewModel.prepareRightBarButtonItem(withTarget: self, andSelector: #selector(addAction))
+    }
+    
+    //MARK: - Actions
+    
+    @objc func addAction() {
         
     }
     
-    func onChange() {
-        Error.text = viewModel.error.value
+    func deleteAction(reminder: Reminder) {
+        
     }
-    
 }

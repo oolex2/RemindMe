@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="RemindMe" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="Yog-T4-vbO" id="cIO-Ec-8LR"/>
                 <outlet property="view" destination="mqo-Oj-ajS" id="jYo-AD-Ue5"/>
             </connections>
         </placeholder>

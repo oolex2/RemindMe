@@ -9,6 +9,8 @@ import UIKit
 
 final class HomeViewController: BaseViewController {
 
+    @IBOutlet private weak var tableView: UITableView!
+    
     let viewModel = HomeViewModel()
     
     //MARK: - Initialization
@@ -27,11 +29,22 @@ final class HomeViewController: BaseViewController {
         super.viewDidLoad()
         
         prepareNavigationItem()
+        registerNibs()
     }
     
     private func prepareNavigationItem() {
         self.navigationItem.title = viewModel.title
         self.navigationItem.rightBarButtonItem = viewModel.prepareRightBarButtonItem(withTarget: self, andSelector: #selector(addAction))
+    }
+    
+    private func bindProperties() {
+        viewModel.tableView.bind { [weak self] tableView in
+            self?.tableView = tableView
+        }
+    }
+    
+    private func registerNibs() {
+        tableView.register(UINib(nibName: ReminderTableViewCell.nibName, bundle: .main), forCellReuseIdentifier: ReminderTableViewCell.nibName)
     }
     
     //MARK: - Actions
@@ -42,5 +55,22 @@ final class HomeViewController: BaseViewController {
     
     func deleteAction(reminder: Reminder) {
         
+    }
+    
+}
+
+//MARK: - UITableView methods
+
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        viewModel.reminders.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let reminderCell = tableView.dequeueReusableCell(withIdentifier: ReminderTableViewCell.nibName) as? ReminderTableViewCell else { return UITableViewCell()}
+        let reminder = viewModel.reminders[indexPath.row]
+        reminderCell.configure(withReminder: reminder)
+        return reminderCell
     }
 }

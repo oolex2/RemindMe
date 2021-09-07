@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		144DC47B26E7A5940076B671 /* ReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144DC47A26E7A5940076B671 /* ReminderTableViewCell.swift */; };
+		144DC47D26E7A5A30076B671 /* ReminderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144DC47C26E7A5A30076B671 /* ReminderTableViewCell.xib */; };
 		146F18C626D525EB0028E6DD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F18C526D525EB0028E6DD /* SettingsViewController.swift */; };
 		146F18C826D5262C0028E6DD /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 146F18C726D5262C0028E6DD /* SettingsViewController.xib */; };
 		146F18CA26D526800028E6DD /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F18C926D526800028E6DD /* SettingsViewModel.swift */; };
@@ -59,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		144DC47A26E7A5940076B671 /* ReminderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderTableViewCell.swift; sourceTree = "<group>"; };
+		144DC47C26E7A5A30076B671 /* ReminderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderTableViewCell.xib; sourceTree = "<group>"; };
 		146F18C526D525EB0028E6DD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		146F18C726D5262C0028E6DD /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		146F18C926D526800028E6DD /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
@@ -123,6 +127,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		144DC47926E7A5760076B671 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				144DC47A26E7A5940076B671 /* ReminderTableViewCell.swift */,
+				144DC47C26E7A5A30076B671 /* ReminderTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		146F18C426D525D20028E6DD /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +292,7 @@
 		14BE7E9926A5C23B00E86F5D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				144DC47926E7A5760076B671 /* Cells */,
 				14BE7E9A26A5C24800E86F5D /* HomeViewController.swift */,
 			);
 			path = Home;
@@ -446,6 +460,7 @@
 				14BE7E5826A5B1D900E86F5D /* LaunchScreen.storyboard in Resources */,
 				14BE7EAE26A5C9B800E86F5D /* Images.xcassets in Resources */,
 				14BE7E5526A5B1D900E86F5D /* Assets.xcassets in Resources */,
+				144DC47D26E7A5A30076B671 /* ReminderTableViewCell.xib in Resources */,
 				14BE7EB126A5C9CD00E86F5D /* Colors.xcassets in Resources */,
 				14BE7E5326A5B1D800E86F5D /* Main.storyboard in Resources */,
 				146F18C826D5262C0028E6DD /* SettingsViewController.xib in Resources */,
@@ -486,6 +501,7 @@
 			files = (
 				14BE7E9326A5BC1100E86F5D /* TabBarViewModel.swift in Sources */,
 				14BE7E8A26A5B99E00E86F5D /* Observer.swift in Sources */,
+				144DC47B26E7A5940076B671 /* ReminderTableViewCell.swift in Sources */,
 				14BE7E9E26A5C33B00E86F5D /* HomeViewModel.swift in Sources */,
 				146F18CC26D52F270028E6DD /* Reminder.swift in Sources */,
 				146F18C626D525EB0028E6DD /* SettingsViewController.swift in Sources */,

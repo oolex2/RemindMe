@@ -9,6 +9,7 @@ import Foundation
 
 final class Reminder {
     var title: String
+    var subTitle: String
     var time: NSDate
     
     var isActive: Bool {

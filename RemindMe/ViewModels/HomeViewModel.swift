@@ -17,6 +17,9 @@ final class HomeViewModel: BaseViewModel {
         Constants.title
     }
     
+    var reminders = [Reminder]()
+    var tableView = Observer(UITableView())
+    
     func prepareRightBarButtonItem(withTarget target: Any?, andSelector selector: Selector?) -> UIBarButtonItem {
         let barButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: target, action: selector)
         barButtonItem.tintColor = mainColor

@@ -18,7 +18,7 @@ final class TabBarViewModel: BaseViewModel {
         tabBarController.value = UITabBarController()
         tabBarController.value.modalPresentationStyle = .fullScreen;
         tabBarController.value.tabBar.tintColor = mainColor;
-        tabBarController.value.tabBar.barTintColor = UIColor(named: "test")
+        tabBarController.value.tabBar.barTintColor = UIColor(named: "lightGray")
     }
     
     func initTabBar() {

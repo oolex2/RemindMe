@@ -24,5 +24,6 @@ class BaseViewController: UIViewController {
     private func configureNavigationItem() {
         self.navigationController?.navigationBar.barTintColor = viewModel.secondaryColor
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationBar.tintColor = viewModel.mainColor
     }
 }

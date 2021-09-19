@@ -13,6 +13,7 @@ final class ReminderTableViewCell: UITableViewCell {
     @IBOutlet private weak var borderView: UIView!
     @IBOutlet private weak var mainTitle: UILabel!
     @IBOutlet private weak var subTitle: UILabel!
+    @IBOutlet private weak var dateLabel: UILabel!
     
     private struct Constants {
         static let cornerRadius: CGFloat = 12
@@ -23,21 +24,27 @@ final class ReminderTableViewCell: UITableViewCell {
     //MARK: - Lifecycle
     
     override func awakeFromNib() {
-        configureBackgroundView()
+        configureBorderView()
+        configureSelection()
     }
     
     //MARK: - Private
     
-    private func configureBackgroundView() {
+    private func configureBorderView() {
         borderView.layer.cornerRadius = Constants.cornerRadius
         borderView.layer.borderWidth = Constants.borderWidth
         borderView.layer.borderColor = Constants.borderColor.cgColor
     }
     
+    private func configureSelection() {
+        self.selectionStyle = .none
+    }
+    
     //MARK: - Public
     
-    func configure(withReminder reminder: Reminder) {
+    func configure(with reminder: Reminder) {
         mainTitle.text = reminder.title
-        subTitle.text = reminder.subTitle
+        subTitle.text = reminder.subtitle
+        dateLabel.text = reminder.date.description
     }
 }

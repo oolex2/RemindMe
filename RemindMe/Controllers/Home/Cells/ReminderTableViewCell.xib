@@ -20,21 +20,28 @@
                         <rect key="frame" x="8" y="8" width="405" height="116"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgS-nE-Xcn" userLabel="title">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgS-nE-Xcn" userLabel="title">
                         <rect key="frame" x="24" y="24" width="381" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKd-N9-YQq" userLabel="subTitle">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKd-N9-YQq" userLabel="subTitle">
                         <rect key="frame" x="24" y="51.5" width="381" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date and time" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJk-bU-tsz" userLabel="date">
+                        <rect key="frame" x="24" y="100" width="381" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
+                    <constraint firstItem="UJk-bU-tsz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rKd-N9-YQq" secondAttribute="bottom" constant="8" id="4vs-ij-nnB"/>
                     <constraint firstItem="rKd-N9-YQq" firstAttribute="leading" secondItem="yfY-qo-ah2" secondAttribute="leading" constant="24" id="BIL-3D-8Pc"/>
                     <constraint firstAttribute="trailing" secondItem="rKd-N9-YQq" secondAttribute="trailing" constant="16" id="E1h-ED-BjH"/>
                     <constraint firstAttribute="bottom" secondItem="WMK-Y3-r7d" secondAttribute="bottom" constant="8" id="E4i-An-pG9"/>
@@ -42,7 +49,9 @@
                     <constraint firstItem="YgS-nE-Xcn" firstAttribute="top" secondItem="yfY-qo-ah2" secondAttribute="top" constant="24" id="PTH-u2-w4Q"/>
                     <constraint firstAttribute="trailing" secondItem="WMK-Y3-r7d" secondAttribute="trailing" constant="8" id="V6R-wM-lDa"/>
                     <constraint firstItem="YgS-nE-Xcn" firstAttribute="leading" secondItem="yfY-qo-ah2" secondAttribute="leading" constant="24" id="XLb-oW-ZOQ"/>
-                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rKd-N9-YQq" secondAttribute="bottom" constant="16" id="nv3-Vu-rZ6"/>
+                    <constraint firstAttribute="bottom" secondItem="UJk-bU-tsz" secondAttribute="bottom" constant="16" id="YCZ-Cb-aGq"/>
+                    <constraint firstItem="UJk-bU-tsz" firstAttribute="leading" secondItem="yfY-qo-ah2" secondAttribute="leading" constant="24" id="aE0-xd-9wI"/>
+                    <constraint firstAttribute="trailing" secondItem="UJk-bU-tsz" secondAttribute="trailing" constant="16" id="axu-pX-g6U"/>
                     <constraint firstAttribute="trailing" secondItem="YgS-nE-Xcn" secondAttribute="trailing" constant="16" id="pIX-tq-n4A"/>
                     <constraint firstItem="rKd-N9-YQq" firstAttribute="top" secondItem="YgS-nE-Xcn" secondAttribute="bottom" constant="8" id="rtn-FA-cbt"/>
                     <constraint firstItem="WMK-Y3-r7d" firstAttribute="top" secondItem="yfY-qo-ah2" secondAttribute="top" constant="8" id="taM-FO-RKz"/>
@@ -50,6 +59,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="borderView" destination="WMK-Y3-r7d" id="OlI-dz-2ew"/>
+                <outlet property="dateLabel" destination="UJk-bU-tsz" id="pyx-UN-GoP"/>
                 <outlet property="mainTitle" destination="YgS-nE-Xcn" id="m1w-rP-N9F"/>
                 <outlet property="subTitle" destination="rKd-N9-YQq" id="96C-i8-UgF"/>
             </connections>

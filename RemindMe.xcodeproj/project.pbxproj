@@ -41,6 +41,9 @@
 		14BE7EAF26A5C9B800E86F5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BE7EAD26A5C9B800E86F5D /* Images.xcassets */; };
 		14BE7EB126A5C9CD00E86F5D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BE7EB026A5C9CD00E86F5D /* Colors.xcassets */; };
 		14BE7EB226A5C9CD00E86F5D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BE7EB026A5C9CD00E86F5D /* Colors.xcassets */; };
+		14DD72CF26F7CF1C002C02D7 /* CreateReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD72CE26F7CF1C002C02D7 /* CreateReminderViewController.swift */; };
+		14DD72D226F7CF41002C02D7 /* CreateReminderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD72D126F7CF41002C02D7 /* CreateReminderViewModel.swift */; };
+		14DD72D426F7D00D002C02D7 /* CreateReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14DD72D326F7D00D002C02D7 /* CreateReminderViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,9 @@
 		14BE7EA826A5C61A00E86F5D /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		14BE7EAD26A5C9B800E86F5D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		14BE7EB026A5C9CD00E86F5D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		14DD72CE26F7CF1C002C02D7 /* CreateReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReminderViewController.swift; sourceTree = "<group>"; };
+		14DD72D126F7CF41002C02D7 /* CreateReminderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReminderViewModel.swift; sourceTree = "<group>"; };
+		14DD72D326F7D00D002C02D7 /* CreateReminderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateReminderViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,9 +257,9 @@
 		14BE7E8E26A5B9DD00E86F5D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				14DD72D026F7CF23002C02D7 /* Home */,
 				14BE7EA826A5C61A00E86F5D /* BaseViewModel.swift */,
 				14BE7E9226A5BC1100E86F5D /* TabBarViewModel.swift */,
-				14BE7E9D26A5C33B00E86F5D /* HomeViewModel.swift */,
 				146F18C926D526800028E6DD /* SettingsViewModel.swift */,
 			);
 			path = ViewModels;
@@ -294,6 +300,7 @@
 			children = (
 				144DC47926E7A5760076B671 /* Cells */,
 				14BE7E9A26A5C24800E86F5D /* HomeViewController.swift */,
+				14DD72CE26F7CF1C002C02D7 /* CreateReminderViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -303,6 +310,7 @@
 			children = (
 				14BE7EA126A5C39F00E86F5D /* HomeViewController.xib */,
 				146F18C726D5262C0028E6DD /* SettingsViewController.xib */,
+				14DD72D326F7D00D002C02D7 /* CreateReminderViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -331,6 +339,15 @@
 				14BE7E5126A5B1D800E86F5D /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		14DD72D026F7CF23002C02D7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				14BE7E9D26A5C33B00E86F5D /* HomeViewModel.swift */,
+				14DD72D126F7CF41002C02D7 /* CreateReminderViewModel.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -461,6 +478,7 @@
 				14BE7EAE26A5C9B800E86F5D /* Images.xcassets in Resources */,
 				14BE7E5526A5B1D900E86F5D /* Assets.xcassets in Resources */,
 				144DC47D26E7A5A30076B671 /* ReminderTableViewCell.xib in Resources */,
+				14DD72D426F7D00D002C02D7 /* CreateReminderViewController.xib in Resources */,
 				14BE7EB126A5C9CD00E86F5D /* Colors.xcassets in Resources */,
 				14BE7E5326A5B1D800E86F5D /* Main.storyboard in Resources */,
 				146F18C826D5262C0028E6DD /* SettingsViewController.xib in Resources */,
@@ -507,8 +525,10 @@
 				146F18C626D525EB0028E6DD /* SettingsViewController.swift in Sources */,
 				14BE7E5026A5B1D800E86F5D /* TabBarViewController.swift in Sources */,
 				14BE7E9726A5C12100E86F5D /* TabBarDataSource.swift in Sources */,
+				14DD72CF26F7CF1C002C02D7 /* CreateReminderViewController.swift in Sources */,
 				14BE7EA926A5C61A00E86F5D /* BaseViewModel.swift in Sources */,
 				14BE7EA626A5C5C000E86F5D /* BaseViewController.swift in Sources */,
+				14DD72D226F7CF41002C02D7 /* CreateReminderViewModel.swift in Sources */,
 				146F18CA26D526800028E6DD /* SettingsViewModel.swift in Sources */,
 				14BE7E4C26A5B1D800E86F5D /* AppDelegate.swift in Sources */,
 				14BE7E9B26A5C24800E86F5D /* HomeViewController.swift in Sources */,

@@ -9,17 +9,18 @@ import Foundation
 
 final class Reminder {
     var title: String
-    var subTitle: String
-    var time: NSDate
+    var subtitle: String?
+    var date: Date
     
     var isActive: Bool {
-        return time.earlierDate(Date()) == time as Date
+        return (date as NSDate).earlierDate(Date()) == date as Date
     }
     
     //MARK: - Initialization
     
-    init(title: String, time: NSDate) {
+    init(title: String, subtitle: String?, date: Date) {
         self.title = title
-        self.time = time
+        self.subtitle = subtitle
+        self.date = date
     }
 }

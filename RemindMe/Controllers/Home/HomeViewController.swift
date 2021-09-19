@@ -34,13 +34,7 @@ final class HomeViewController: BaseViewController {
     
     private func prepareNavigationItem() {
         self.navigationItem.title = viewModel.title
-        self.navigationItem.rightBarButtonItem = viewModel.prepareRightBarButtonItem(withTarget: self, andSelector: #selector(addAction))
-    }
-    
-    private func bindProperties() {
-        viewModel.tableView.bind { [weak self] tableView in
-            self?.tableView = tableView
-        }
+        self.navigationItem.rightBarButtonItem = viewModel.prepareRightBarButtonItem(ofType: .add, withTarget: self, andSelector: #selector(addAction))
     }
     
     private func registerNibs() {
@@ -49,11 +43,13 @@ final class HomeViewController: BaseViewController {
     
     //MARK: - Actions
     
-    @objc func addAction() {
-        
+    @objc private func addAction() {
+        let controller = CreateReminderViewController()
+        controller.delegate = self
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
-    func deleteAction(reminder: Reminder) {
+    private func deleteAction(reminder: Reminder) {
         
     }
     
@@ -70,7 +66,16 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let reminderCell = tableView.dequeueReusableCell(withIdentifier: ReminderTableViewCell.nibName) as? ReminderTableViewCell else { return UITableViewCell()}
         let reminder = viewModel.reminders[indexPath.row]
-        reminderCell.configure(withReminder: reminder)
+        reminderCell.configure(with: reminder)
         return reminderCell
+    }
+}
+
+// MARK: - CreateReminderDelegate
+
+extension HomeViewController: CreateReminderDelegate {
+    func didCreateReminder(_ reminder: Reminder) {
+        viewModel.didCreateReminder(reminder)
+        self.tableView.reloadData()
     }
 }

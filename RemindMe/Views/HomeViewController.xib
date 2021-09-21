@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="RemindMe" customModuleProvider="target">
             <connections>
+                <outlet property="segmentedControl" destination="prb-Pn-8TH" id="sze-d5-lhq"/>
                 <outlet property="tableView" destination="Yog-T4-vbO" id="cIO-Ec-8LR"/>
                 <outlet property="view" destination="mqo-Oj-ajS" id="jYo-AD-Ue5"/>
             </connections>
@@ -27,6 +28,9 @@
                         <segment title="History"/>
                     </segments>
                     <color key="selectedSegmentTintColor" systemColor="systemGreenColor"/>
+                    <connections>
+                        <action selector="segmentedAction:" destination="-1" eventType="valueChanged" id="mdX-Bo-OPY"/>
+                    </connections>
                 </segmentedControl>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yog-T4-vbO">
                     <rect key="frame" x="16" y="107" width="382" height="739"/>

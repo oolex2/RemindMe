@@ -25,5 +25,12 @@ class BaseViewController: UIViewController {
         self.navigationController?.navigationBar.barTintColor = viewModel.secondaryColor
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationBar.tintColor = viewModel.mainColor
+        configureBackNavigation()
+    }
+    
+    private func configureBackNavigation() {
+        let backButton = UIBarButtonItem()
+        backButton.title = String()
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
     }
 }

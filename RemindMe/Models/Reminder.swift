@@ -7,13 +7,13 @@
 
 import Foundation
 
-final class Reminder {
+final class Reminder: NSObject {
     var title: String
     var subtitle: String?
     var date: Date
     
     var isActive: Bool {
-        return (date as NSDate).earlierDate(Date()) == date as Date
+        return (date as NSDate).laterDate(Date()) == date as Date
     }
     
     //MARK: - Initialization

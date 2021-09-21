@@ -36,6 +36,7 @@ final class CreateReminderViewModel: BaseViewModel {
     // MARK: - Private
     
     private func saveToIphoneReminder() {
-        
+        guard let currentReminder = currentReminder else { return }
+        ReminderManager.shared.create(currentReminder)
     }
 }

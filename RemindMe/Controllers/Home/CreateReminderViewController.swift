@@ -36,7 +36,7 @@ final class CreateReminderViewController: BaseViewController {
         super.viewDidLoad()
         
         prepareNavigationItem()
-        bindProperties()
+        configureDatePicker()
     }
     
     // MARK: - Private
@@ -46,24 +46,21 @@ final class CreateReminderViewController: BaseViewController {
         self.navigationItem.rightBarButtonItem = viewModel.prepareRightBarButtonItem(ofType: .done, withTarget: self, andSelector: #selector(doneAction))
     }
     
+    private func configureDatePicker() {
+        datePicker.minimumDate = Date()
+    }
+    
     private func bindProperties() {
-        viewModel.titleField.bind { [weak self] titleField in
-            self?.titleField = titleField
-        }
-        viewModel.subtitleField.bind { [weak self] subtitleField in
-            self?.subtitleField = subtitleField
-        }
-        viewModel.intergateInPhoneSwitch.bind { [weak self] intergateInPhoneSwitch in
-            self?.intergateInPhoneSwitch = intergateInPhoneSwitch
-        }
-        viewModel.datePicker.bind { [weak self] datePicker in
-            self?.datePicker = datePicker
-        }
+        viewModel.titleField.value = self.titleField
+        viewModel.subtitleField.value = self.subtitleField
+        viewModel.intergateInPhoneSwitch.value = self.intergateInPhoneSwitch
+        viewModel.datePicker.value = self.datePicker
     }
     
     // MARK: - Actions
     
     @objc private func doneAction() {
+        bindProperties()
         viewModel.prepareData()
         guard let currentReminder = viewModel.currentReminder else { return }
         delegate?.didCreateReminder(currentReminder)

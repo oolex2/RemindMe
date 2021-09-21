@@ -41,6 +41,7 @@
 		14BE7EAF26A5C9B800E86F5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BE7EAD26A5C9B800E86F5D /* Images.xcassets */; };
 		14BE7EB126A5C9CD00E86F5D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BE7EB026A5C9CD00E86F5D /* Colors.xcassets */; };
 		14BE7EB226A5C9CD00E86F5D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BE7EB026A5C9CD00E86F5D /* Colors.xcassets */; };
+		14D04A6026FA792F00654CEF /* ReminderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D04A5F26FA792F00654CEF /* ReminderManager.swift */; };
 		14DD72CF26F7CF1C002C02D7 /* CreateReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD72CE26F7CF1C002C02D7 /* CreateReminderViewController.swift */; };
 		14DD72D226F7CF41002C02D7 /* CreateReminderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD72D126F7CF41002C02D7 /* CreateReminderViewModel.swift */; };
 		14DD72D426F7D00D002C02D7 /* CreateReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14DD72D326F7D00D002C02D7 /* CreateReminderViewController.xib */; };
@@ -96,6 +97,7 @@
 		14BE7EA826A5C61A00E86F5D /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		14BE7EAD26A5C9B800E86F5D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		14BE7EB026A5C9CD00E86F5D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		14D04A5F26FA792F00654CEF /* ReminderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderManager.swift; sourceTree = "<group>"; };
 		14DD72CE26F7CF1C002C02D7 /* CreateReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReminderViewController.swift; sourceTree = "<group>"; };
 		14DD72D126F7CF41002C02D7 /* CreateReminderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReminderViewModel.swift; sourceTree = "<group>"; };
 		14DD72D326F7D00D002C02D7 /* CreateReminderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateReminderViewController.xib; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				14BE7EAB26A5C99000E86F5D /* Assets */,
 				14BE7E8826A5B98500E86F5D /* Utilities */,
 				14BE7EB326A5C9DC00E86F5D /* Storyboards */,
+				14D04A5D26FA789F00654CEF /* Supporting files */,
 				14BE7E8726A5B97800E86F5D /* Sources */,
 				14BE7E5926A5B1D900E86F5D /* Info.plist */,
 			);
@@ -339,6 +342,14 @@
 				14BE7E5126A5B1D800E86F5D /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		14D04A5D26FA789F00654CEF /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				14D04A5F26FA792F00654CEF /* ReminderManager.swift */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 		14DD72D026F7CF23002C02D7 /* Home */ = {
@@ -518,6 +529,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14BE7E9326A5BC1100E86F5D /* TabBarViewModel.swift in Sources */,
+				14D04A6026FA792F00654CEF /* ReminderManager.swift in Sources */,
 				14BE7E8A26A5B99E00E86F5D /* Observer.swift in Sources */,
 				144DC47B26E7A5940076B671 /* ReminderTableViewCell.swift in Sources */,
 				14BE7E9E26A5C33B00E86F5D /* HomeViewModel.swift in Sources */,

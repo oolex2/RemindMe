@@ -10,6 +10,7 @@ import UIKit
 final class HomeViewController: BaseViewController {
 
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var segmentedControl: UISegmentedControl!
     
     let viewModel = HomeViewModel()
     
@@ -41,6 +42,12 @@ final class HomeViewController: BaseViewController {
         tableView.register(UINib(nibName: ReminderTableViewCell.nibName, bundle: .main), forCellReuseIdentifier: ReminderTableViewCell.nibName)
     }
     
+    private func updateData() {
+        viewModel.filter(for: HomeViewModel.DataType(rawValue: segmentedControl.selectedSegmentIndex) ?? .actual)
+        tableView.reloadData()
+    }
+    
+    
     //MARK: - Actions
     
     @objc private func addAction() {
@@ -49,10 +56,9 @@ final class HomeViewController: BaseViewController {
         self.navigationController?.pushViewController(controller, animated: true)
     }
     
-    private func deleteAction(reminder: Reminder) {
-        
+    @IBAction private func segmentedAction(_ sender: Any) {
+        updateData()
     }
-    
 }
 
 //MARK: - UITableView methods
@@ -69,6 +75,17 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         reminderCell.configure(with: reminder)
         return reminderCell
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            viewModel.delete(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
 }
 
 // MARK: - CreateReminderDelegate
@@ -76,6 +93,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 extension HomeViewController: CreateReminderDelegate {
     func didCreateReminder(_ reminder: Reminder) {
         viewModel.didCreateReminder(reminder)
-        self.tableView.reloadData()
+        updateData()
     }
 }

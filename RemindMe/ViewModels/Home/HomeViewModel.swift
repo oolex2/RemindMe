@@ -13,13 +13,28 @@ final class HomeViewModel: BaseViewModel {
         static let title = "Keep in mind"
     }
     
+    enum DataType: Int {
+        case actual
+        case history
+    }
+    
     var title: String {
         Constants.title
     }
     
     var reminders = [Reminder]()
+    
+    private var allReminders = [Reminder]()
+    
+    func filter(for type: DataType) {
+        reminders = allReminders.filter({ $0.isActive == (type == .actual) })
+    }
+    
+    func delete(at index: Int) {
+        let reminder = reminders[index]
+    }
 
     func didCreateReminder(_ reminder: Reminder) {
-        reminders.append(reminder)
+        allReminders.append(reminder)
     }
 }

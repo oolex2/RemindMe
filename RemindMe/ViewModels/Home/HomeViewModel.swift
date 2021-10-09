@@ -31,7 +31,9 @@ final class HomeViewModel: BaseViewModel {
     }
     
     func delete(at index: Int) {
-        let reminder = reminders[index]
+        let currentReminder = reminders[index]
+        allReminders.removeAll(where: { $0 == currentReminder })
+        ReminderManager.shared.remove(currentReminder)
     }
 
     func didCreateReminder(_ reminder: Reminder) {

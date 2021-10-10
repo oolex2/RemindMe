@@ -20,29 +20,22 @@
 		14BE7E5826A5B1D900E86F5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14BE7E5626A5B1D900E86F5D /* LaunchScreen.storyboard */; };
 		14BE7E6326A5B1D900E86F5D /* RemindMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E6226A5B1D900E86F5D /* RemindMeTests.swift */; };
 		14BE7E6E26A5B1D900E86F5D /* RemindMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E6D26A5B1D900E86F5D /* RemindMeUITests.swift */; };
-		14BE7E8226A5B41C00E86F5D /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E8126A5B41C00E86F5D /* NotificationService.swift */; };
 		14BE7E8A26A5B99E00E86F5D /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E8926A5B99E00E86F5D /* Observer.swift */; };
 		14BE7E8B26A5B99E00E86F5D /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E8926A5B99E00E86F5D /* Observer.swift */; };
 		14BE7E9326A5BC1100E86F5D /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E9226A5BC1100E86F5D /* TabBarViewModel.swift */; };
-		14BE7E9426A5BC1100E86F5D /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E9226A5BC1100E86F5D /* TabBarViewModel.swift */; };
 		14BE7E9726A5C12100E86F5D /* TabBarDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E9626A5C12100E86F5D /* TabBarDataSource.swift */; };
-		14BE7E9826A5C12100E86F5D /* TabBarDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E9626A5C12100E86F5D /* TabBarDataSource.swift */; };
 		14BE7E9B26A5C24800E86F5D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E9A26A5C24800E86F5D /* HomeViewController.swift */; };
-		14BE7E9C26A5C24800E86F5D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E9A26A5C24800E86F5D /* HomeViewController.swift */; };
-		14BE7E9E26A5C33B00E86F5D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E9D26A5C33B00E86F5D /* HomeViewModel.swift */; };
-		14BE7E9F26A5C33B00E86F5D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E9D26A5C33B00E86F5D /* HomeViewModel.swift */; };
 		14BE7EA226A5C39F00E86F5D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14BE7EA126A5C39F00E86F5D /* HomeViewController.xib */; };
 		14BE7EA326A5C39F00E86F5D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14BE7EA126A5C39F00E86F5D /* HomeViewController.xib */; };
 		14BE7EA626A5C5C000E86F5D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7EA526A5C5C000E86F5D /* BaseViewController.swift */; };
-		14BE7EA726A5C5C000E86F5D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7EA526A5C5C000E86F5D /* BaseViewController.swift */; };
 		14BE7EA926A5C61A00E86F5D /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7EA826A5C61A00E86F5D /* BaseViewModel.swift */; };
-		14BE7EAA26A5C61A00E86F5D /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7EA826A5C61A00E86F5D /* BaseViewModel.swift */; };
 		14BE7EAE26A5C9B800E86F5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BE7EAD26A5C9B800E86F5D /* Images.xcassets */; };
 		14BE7EAF26A5C9B800E86F5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BE7EAD26A5C9B800E86F5D /* Images.xcassets */; };
 		14BE7EB126A5C9CD00E86F5D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BE7EB026A5C9CD00E86F5D /* Colors.xcassets */; };
 		14BE7EB226A5C9CD00E86F5D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BE7EB026A5C9CD00E86F5D /* Colors.xcassets */; };
 		14D04A6026FA792F00654CEF /* ReminderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D04A5F26FA792F00654CEF /* ReminderManager.swift */; };
 		14DB3F90271243A3003B0E05 /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB3F8F271243A3003B0E05 /* PushNotificationManager.swift */; };
+		14DB3F9327131B20003B0E05 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E8126A5B41C00E86F5D /* NotificationService.swift */; };
 		14DD72CF26F7CF1C002C02D7 /* CreateReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD72CE26F7CF1C002C02D7 /* CreateReminderViewController.swift */; };
 		14DD72D226F7CF41002C02D7 /* CreateReminderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DD72D126F7CF41002C02D7 /* CreateReminderViewModel.swift */; };
 		14DD72D426F7D00D002C02D7 /* CreateReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14DD72D326F7D00D002C02D7 /* CreateReminderViewController.xib */; };
@@ -100,6 +93,8 @@
 		14BE7EB026A5C9CD00E86F5D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		14D04A5F26FA792F00654CEF /* ReminderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderManager.swift; sourceTree = "<group>"; };
 		14DB3F8F271243A3003B0E05 /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
+		14DB3F912713190B003B0E05 /* RemindMe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RemindMe.entitlements; sourceTree = "<group>"; };
+		14DB3F922713193F003B0E05 /* RemindMeWatchExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RemindMeWatchExtension.entitlements; sourceTree = "<group>"; };
 		14DD72CE26F7CF1C002C02D7 /* CreateReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReminderViewController.swift; sourceTree = "<group>"; };
 		14DD72D126F7CF41002C02D7 /* CreateReminderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReminderViewModel.swift; sourceTree = "<group>"; };
 		14DD72D326F7D00D002C02D7 /* CreateReminderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateReminderViewController.xib; sourceTree = "<group>"; };
@@ -179,6 +174,7 @@
 		14BE7E4A26A5B1D800E86F5D /* RemindMe */ = {
 			isa = PBXGroup;
 			children = (
+				14DB3F912713190B003B0E05 /* RemindMe.entitlements */,
 				14BE7E8C26A5B9D100E86F5D /* Controllers */,
 				14BE7E8E26A5B9DD00E86F5D /* ViewModels */,
 				14BE7E8D26A5B9D600E86F5D /* Models */,
@@ -217,6 +213,7 @@
 		14BE7E8026A5B41C00E86F5D /* RemindMeWatchExtension */ = {
 			isa = PBXGroup;
 			children = (
+				14DB3F922713193F003B0E05 /* RemindMeWatchExtension.entitlements */,
 				14BE7E8126A5B41C00E86F5D /* NotificationService.swift */,
 				14BE7E8326A5B41C00E86F5D /* Info.plist */,
 			);
@@ -536,7 +533,6 @@
 				14D04A6026FA792F00654CEF /* ReminderManager.swift in Sources */,
 				14BE7E8A26A5B99E00E86F5D /* Observer.swift in Sources */,
 				144DC47B26E7A5940076B671 /* ReminderTableViewCell.swift in Sources */,
-				14BE7E9E26A5C33B00E86F5D /* HomeViewModel.swift in Sources */,
 				146F18CC26D52F270028E6DD /* Reminder.swift in Sources */,
 				146F18C626D525EB0028E6DD /* SettingsViewController.swift in Sources */,
 				14BE7E5026A5B1D800E86F5D /* TabBarViewController.swift in Sources */,
@@ -571,13 +567,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14BE7E9C26A5C24800E86F5D /* HomeViewController.swift in Sources */,
-				14BE7E9F26A5C33B00E86F5D /* HomeViewModel.swift in Sources */,
-				14BE7E9826A5C12100E86F5D /* TabBarDataSource.swift in Sources */,
-				14BE7E8226A5B41C00E86F5D /* NotificationService.swift in Sources */,
-				14BE7E9426A5BC1100E86F5D /* TabBarViewModel.swift in Sources */,
-				14BE7EAA26A5C61A00E86F5D /* BaseViewModel.swift in Sources */,
-				14BE7EA726A5C5C000E86F5D /* BaseViewController.swift in Sources */,
+				14DB3F9327131B20003B0E05 /* NotificationService.swift in Sources */,
 				14BE7E8B26A5B99E00E86F5D /* Observer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -738,6 +728,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RemindMe/RemindMe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6BP3RR8629;
 				INFOPLIST_FILE = RemindMe/Info.plist;
@@ -758,6 +749,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RemindMe/RemindMe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6BP3RR8629;
 				INFOPLIST_FILE = RemindMe/Info.plist;
@@ -860,6 +852,7 @@
 		14BE7E8526A5B41C00E86F5D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RemindMeWatchExtension/RemindMeWatchExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6BP3RR8629;
 				INFOPLIST_FILE = RemindMeWatchExtension/Info.plist;
@@ -875,13 +868,14 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
 		14BE7E8626A5B41C00E86F5D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RemindMeWatchExtension/RemindMeWatchExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6BP3RR8629;
 				INFOPLIST_FILE = RemindMeWatchExtension/Info.plist;
@@ -897,7 +891,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};

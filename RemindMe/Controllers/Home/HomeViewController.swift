@@ -33,6 +33,8 @@ final class HomeViewController: BaseViewController {
         registerNibs()
     }
     
+    //MARK: - Private
+    
     private func prepareNavigationItem() {
         self.navigationItem.title = viewModel.title
         self.navigationItem.rightBarButtonItem = viewModel.prepareRightBarButtonItem(ofType: .add, withTarget: self, andSelector: #selector(addAction))
@@ -81,10 +83,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            viewModel.delete(at: indexPath.row)
-            updateData()
-        }
+        guard editingStyle == .delete else { return }
+        viewModel.delete(at: indexPath.row)
+        updateData()
     }
 }
 

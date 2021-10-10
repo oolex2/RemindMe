@@ -7,6 +7,7 @@
 
 import UserNotifications
 
+@available(watchOSApplicationExtension 6.0, *)
 class NotificationService: UNNotificationServiceExtension {
 
     var contentHandler: ((UNNotificationContent) -> Void)?

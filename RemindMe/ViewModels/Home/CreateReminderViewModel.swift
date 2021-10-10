@@ -31,6 +31,7 @@ final class CreateReminderViewModel: BaseViewModel {
         titleText.isEmpty ? titleText = "Untitled" : Void()
         currentReminder = Reminder(title: titleText, subtitle: subtitleField.value.text, date: datePicker.value.date)
         intergateInPhoneSwitch.value.isOn ? saveToIphoneReminder() : Void()
+        configureLocalNotifications()
     }
     
     // MARK: - Private
@@ -38,5 +39,10 @@ final class CreateReminderViewModel: BaseViewModel {
     private func saveToIphoneReminder() {
         guard let currentReminder = currentReminder else { return }
         ReminderManager.shared.create(currentReminder)
+    }
+    
+    private func configureLocalNotifications() {
+        guard let currentReminder = currentReminder else { return }
+        PushNotificationManager.shared.scheduleNotification(reminder: currentReminder)
     }
 }

@@ -34,6 +34,7 @@ final class HomeViewModel: BaseViewModel {
         let currentReminder = reminders[index]
         allReminders.removeAll(where: { $0 == currentReminder })
         ReminderManager.shared.remove(currentReminder)
+        PushNotificationManager.shared.removeNotificaiton(reminder: currentReminder)
     }
 
     func didCreateReminder(_ reminder: Reminder) {

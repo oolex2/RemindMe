@@ -28,7 +28,7 @@ final class CreateReminderViewModel: BaseViewModel {
     
     func prepareData() {
         let remiderBuilder = ReminderBuilder()
-        remiderBuilder.setTitle(title)
+        remiderBuilder.setTitle(titleField.value.text)
         remiderBuilder.setSubTitle(subtitleField.value.text)
         remiderBuilder.setDate(datePicker.value.date)
         currentReminder = remiderBuilder.build()

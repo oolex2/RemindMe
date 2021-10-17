@@ -8,7 +8,19 @@
 import UIKit
 
 class BaseViewModel: NSObject {
-    var mainColor = UIColor.systemGreen
+    
+    var mainColor: UIColor {
+        guard let colorName = UserDefaults.standard.value(forKey: "MainColorName") as? String else { return .systemGreen }
+        switch colorName {
+        case UIColor.systemBlue.name:
+            return .systemBlue
+        case UIColor.systemRed.name:
+            return .systemRed
+        default:
+            return .systemGreen
+        }
+    }
+    
     var secondaryColor = UIColor.white
     
     func prepareRightBarButtonItem(ofType type: UIBarButtonItem.SystemItem, withTarget target: Any?, andSelector selector: Selector?) -> UIBarButtonItem {

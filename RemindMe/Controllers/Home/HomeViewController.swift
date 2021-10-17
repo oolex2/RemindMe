@@ -29,8 +29,14 @@ final class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        prepareNavigationItem()
         registerNibs()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        prepareNavigationItem()
+        configureSegmentControl()
     }
     
     //MARK: - Private
@@ -49,6 +55,9 @@ final class HomeViewController: BaseViewController {
         tableView.reloadData()
     }
     
+    private func configureSegmentControl() {
+        segmentedControl.selectedSegmentTintColor = viewModel.mainColor
+    }
     
     //MARK: - Actions
     

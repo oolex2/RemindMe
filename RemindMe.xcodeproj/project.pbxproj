@@ -11,6 +11,10 @@
 		144DC47D26E7A5A30076B671 /* ReminderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144DC47C26E7A5A30076B671 /* ReminderTableViewCell.xib */; };
 		145E67FA2713A50300FB0583 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E9D26A5C33B00E86F5D /* HomeViewModel.swift */; };
 		146B8CE1271C905E00D3F8F9 /* ReminderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146B8CE0271C905E00D3F8F9 /* ReminderBuilder.swift */; };
+		146B8CE4271C9C5A00D3F8F9 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146B8CE3271C9C5A00D3F8F9 /* SettingsTableViewCell.swift */; };
+		146B8CE6271C9C7100D3F8F9 /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 146B8CE5271C9C7100D3F8F9 /* SettingsTableViewCell.xib */; };
+		146B8CE9271CAD7700D3F8F9 /* ColorThemeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146B8CE8271CAD7700D3F8F9 /* ColorThemeDelegate.swift */; };
+		146B8CEC271CAEAE00D3F8F9 /* UIColor + Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146B8CEB271CAEAE00D3F8F9 /* UIColor + Name.swift */; };
 		146F18C626D525EB0028E6DD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F18C526D525EB0028E6DD /* SettingsViewController.swift */; };
 		146F18C826D5262C0028E6DD /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 146F18C726D5262C0028E6DD /* SettingsViewController.xib */; };
 		146F18CA26D526800028E6DD /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F18C926D526800028E6DD /* SettingsViewModel.swift */; };
@@ -77,6 +81,10 @@
 		144DC47A26E7A5940076B671 /* ReminderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderTableViewCell.swift; sourceTree = "<group>"; };
 		144DC47C26E7A5A30076B671 /* ReminderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderTableViewCell.xib; sourceTree = "<group>"; };
 		146B8CE0271C905E00D3F8F9 /* ReminderBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderBuilder.swift; sourceTree = "<group>"; };
+		146B8CE3271C9C5A00D3F8F9 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		146B8CE5271C9C7100D3F8F9 /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
+		146B8CE8271CAD7700D3F8F9 /* ColorThemeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorThemeDelegate.swift; sourceTree = "<group>"; };
+		146B8CEB271CAEAE00D3F8F9 /* UIColor + Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Name.swift"; sourceTree = "<group>"; };
 		146F18C526D525EB0028E6DD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		146F18C726D5262C0028E6DD /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		146F18C926D526800028E6DD /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
@@ -165,9 +173,35 @@
 			path = Builders;
 			sourceTree = "<group>";
 		};
+		146B8CE2271C9C3800D3F8F9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				146B8CE3271C9C5A00D3F8F9 /* SettingsTableViewCell.swift */,
+				146B8CE5271C9C7100D3F8F9 /* SettingsTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		146B8CE7271CAD5B00D3F8F9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				146B8CE8271CAD7700D3F8F9 /* ColorThemeDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		146B8CEA271CAE8500D3F8F9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				146B8CEB271CAEAE00D3F8F9 /* UIColor + Name.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		146F18C426D525D20028E6DD /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				146B8CE2271C9C3800D3F8F9 /* Cells */,
 				146F18C526D525EB0028E6DD /* SettingsViewController.swift */,
 			);
 			path = Settings;
@@ -205,7 +239,9 @@
 				14BE7E8D26A5B9D600E86F5D /* Models */,
 				14BE7EA026A5C39300E86F5D /* Views */,
 				14BE7EAB26A5C99000E86F5D /* Assets */,
+				146B8CE7271CAD5B00D3F8F9 /* Protocols */,
 				14BE7E8826A5B98500E86F5D /* Utilities */,
+				146B8CEA271CAE8500D3F8F9 /* Extensions */,
 				14BE7EB326A5C9DC00E86F5D /* Storyboards */,
 				14D04A5D26FA789F00654CEF /* Supporting files */,
 				14BE7E8726A5B97800E86F5D /* Sources */,
@@ -515,6 +551,7 @@
 				14BE7EAE26A5C9B800E86F5D /* Images.xcassets in Resources */,
 				14BE7E5526A5B1D900E86F5D /* Assets.xcassets in Resources */,
 				144DC47D26E7A5A30076B671 /* ReminderTableViewCell.xib in Resources */,
+				146B8CE6271C9C7100D3F8F9 /* SettingsTableViewCell.xib in Resources */,
 				14DD72D426F7D00D002C02D7 /* CreateReminderViewController.xib in Resources */,
 				14BE7EB126A5C9CD00E86F5D /* Colors.xcassets in Resources */,
 				14BE7E5326A5B1D800E86F5D /* Main.storyboard in Resources */,
@@ -556,6 +593,7 @@
 			files = (
 				145E67FA2713A50300FB0583 /* HomeViewModel.swift in Sources */,
 				14DB3F90271243A3003B0E05 /* PushNotificationManager.swift in Sources */,
+				146B8CEC271CAEAE00D3F8F9 /* UIColor + Name.swift in Sources */,
 				14BE7E9326A5BC1100E86F5D /* TabBarViewModel.swift in Sources */,
 				14D04A6026FA792F00654CEF /* ReminderManager.swift in Sources */,
 				14BE7E8A26A5B99E00E86F5D /* Observer.swift in Sources */,
@@ -570,6 +608,8 @@
 				146B8CE1271C905E00D3F8F9 /* ReminderBuilder.swift in Sources */,
 				14DD72D226F7CF41002C02D7 /* CreateReminderViewModel.swift in Sources */,
 				146F18CA26D526800028E6DD /* SettingsViewModel.swift in Sources */,
+				146B8CE9271CAD7700D3F8F9 /* ColorThemeDelegate.swift in Sources */,
+				146B8CE4271C9C5A00D3F8F9 /* SettingsTableViewCell.swift in Sources */,
 				14BE7E4C26A5B1D800E86F5D /* AppDelegate.swift in Sources */,
 				14BE7E9B26A5C24800E86F5D /* HomeViewController.swift in Sources */,
 			);
@@ -686,7 +726,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -741,7 +781,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

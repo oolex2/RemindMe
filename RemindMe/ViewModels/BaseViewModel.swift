@@ -8,7 +8,7 @@
 import UIKit
 
 class BaseViewModel: NSObject {
-    var mainColor = UIColor.green
+    var mainColor = UIColor.systemGreen
     var secondaryColor = UIColor.white
     
     func prepareRightBarButtonItem(ofType type: UIBarButtonItem.SystemItem, withTarget target: Any?, andSelector selector: Selector?) -> UIBarButtonItem {

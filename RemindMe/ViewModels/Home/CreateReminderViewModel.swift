@@ -27,9 +27,11 @@ final class CreateReminderViewModel: BaseViewModel {
     // MARK: - Public
     
     func prepareData() {
-        var titleText = titleField.value.text ?? "Untitled"
-        titleText.isEmpty ? titleText = "Untitled" : Void()
-        currentReminder = Reminder(title: titleText, subtitle: subtitleField.value.text, date: datePicker.value.date)
+        let remiderBuilder = ReminderBuilder()
+        remiderBuilder.setTitle(title)
+        remiderBuilder.setSubTitle(subtitleField.value.text)
+        remiderBuilder.setDate(datePicker.value.date)
+        currentReminder = remiderBuilder.build()
         intergateInPhoneSwitch.value.isOn ? saveToIphoneReminder() : Void()
         configureLocalNotifications()
     }

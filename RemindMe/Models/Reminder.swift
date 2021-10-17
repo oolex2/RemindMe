@@ -11,16 +11,14 @@ final class Reminder: NSObject {
     var title: String
     var subtitle: String?
     var date: Date
-    
-    var isActive: Bool {
-        return (date as NSDate).laterDate(Date()) == date as Date
-    }
+    var isActive: Bool
     
     //MARK: - Initialization
     
-    init(title: String, subtitle: String?, date: Date) {
+    init(title: String, subtitle: String?, date: Date, isActive: Bool) {
         self.title = title
         self.subtitle = subtitle
         self.date = date
+        self.isActive = isActive
     }
 }

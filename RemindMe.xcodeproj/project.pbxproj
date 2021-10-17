@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		144DC47B26E7A5940076B671 /* ReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144DC47A26E7A5940076B671 /* ReminderTableViewCell.swift */; };
 		144DC47D26E7A5A30076B671 /* ReminderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144DC47C26E7A5A30076B671 /* ReminderTableViewCell.xib */; };
+		145E67FA2713A50300FB0583 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE7E9D26A5C33B00E86F5D /* HomeViewModel.swift */; };
+		146B8CE1271C905E00D3F8F9 /* ReminderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146B8CE0271C905E00D3F8F9 /* ReminderBuilder.swift */; };
 		146F18C626D525EB0028E6DD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F18C526D525EB0028E6DD /* SettingsViewController.swift */; };
 		146F18C826D5262C0028E6DD /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 146F18C726D5262C0028E6DD /* SettingsViewController.xib */; };
 		146F18CA26D526800028E6DD /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F18C926D526800028E6DD /* SettingsViewModel.swift */; };
@@ -58,9 +60,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		145E680A2713A58400FB0583 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		144DC47A26E7A5940076B671 /* ReminderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderTableViewCell.swift; sourceTree = "<group>"; };
 		144DC47C26E7A5A30076B671 /* ReminderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderTableViewCell.xib; sourceTree = "<group>"; };
+		146B8CE0271C905E00D3F8F9 /* ReminderBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderBuilder.swift; sourceTree = "<group>"; };
 		146F18C526D525EB0028E6DD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		146F18C726D5262C0028E6DD /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		146F18C926D526800028E6DD /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
@@ -141,6 +157,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		146B8CDF271C903800D3F8F9 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				146B8CE0271C905E00D3F8F9 /* ReminderBuilder.swift */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
 		146F18C426D525D20028E6DD /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +201,7 @@
 				14DB3F912713190B003B0E05 /* RemindMe.entitlements */,
 				14BE7E8C26A5B9D100E86F5D /* Controllers */,
 				14BE7E8E26A5B9DD00E86F5D /* ViewModels */,
+				146B8CDF271C903800D3F8F9 /* Builders */,
 				14BE7E8D26A5B9D600E86F5D /* Models */,
 				14BE7EA026A5C39300E86F5D /* Views */,
 				14BE7EAB26A5C99000E86F5D /* Assets */,
@@ -371,6 +396,7 @@
 				14BE7E4426A5B1D800E86F5D /* Sources */,
 				14BE7E4526A5B1D800E86F5D /* Frameworks */,
 				14BE7E4626A5B1D800E86F5D /* Resources */,
+				145E680A2713A58400FB0583 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -528,6 +554,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				145E67FA2713A50300FB0583 /* HomeViewModel.swift in Sources */,
 				14DB3F90271243A3003B0E05 /* PushNotificationManager.swift in Sources */,
 				14BE7E9326A5BC1100E86F5D /* TabBarViewModel.swift in Sources */,
 				14D04A6026FA792F00654CEF /* ReminderManager.swift in Sources */,
@@ -540,6 +567,7 @@
 				14DD72CF26F7CF1C002C02D7 /* CreateReminderViewController.swift in Sources */,
 				14BE7EA926A5C61A00E86F5D /* BaseViewModel.swift in Sources */,
 				14BE7EA626A5C5C000E86F5D /* BaseViewController.swift in Sources */,
+				146B8CE1271C905E00D3F8F9 /* ReminderBuilder.swift in Sources */,
 				14DD72D226F7CF41002C02D7 /* CreateReminderViewModel.swift in Sources */,
 				146F18CA26D526800028E6DD /* SettingsViewModel.swift in Sources */,
 				14BE7E4C26A5B1D800E86F5D /* AppDelegate.swift in Sources */,
@@ -726,6 +754,7 @@
 		14BE7E7326A5B1D900E86F5D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = RemindMe/RemindMe.entitlements;
@@ -747,6 +776,7 @@
 		14BE7E7426A5B1D900E86F5D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = RemindMe/RemindMe.entitlements;

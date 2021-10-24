@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 final class SettingsViewModel: BaseViewModel {
     
@@ -28,12 +29,12 @@ final class SettingsViewModel: BaseViewModel {
     }
     
     func handleAction(for viewController: SettingsViewController, with index: Int) {
-        switch index {
-        case 0:
+        switch dataSource[index] {
+        case Constants.applicationTheme:
             delegate = viewController
             showChooseTheme(for: viewController)
-        case 1:
-            return
+        case Constants.about:
+            showAboutPage(for: viewController)
         default:
             return
         }
@@ -46,6 +47,11 @@ final class SettingsViewModel: BaseViewModel {
         alertController.addAction(prepareAlertAction(color: .systemRed))
         alertController.addAction(UIAlertAction(title: Constants.cancel, style: .cancel))
         viewController.present(alertController, animated: true, completion: nil)
+    }
+    
+    private func showAboutPage(for viewController: UIViewController) {
+        let aboutView = UIHostingController(rootView: AboutViewController())
+        viewController.navigationController?.pushViewController(aboutView, animated: true)
     }
     
     private func prepareAlertAction(color: UIColor) -> UIAlertAction {

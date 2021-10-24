@@ -18,7 +18,7 @@ struct AboutViewController: View {
     var body: some View {
         VStack {
             Text(Constants.description).font(.title).frame(maxHeight: .infinity, alignment: .center)
-            Text(Constants.copyright).font(.body).frame(maxHeight: .infinity, alignment: .bottom).padding(EdgeInsets(top: .zero, leading: .zero, bottom: 16, trailing: .zero))
+            Text(Constants.copyright).font(.body).frame(maxHeight: .infinity, alignment: .bottom).padding()
         }
         .multilineTextAlignment(.center)
         .navigationBarTitle(Constants.title)
